@@ -1,0 +1,967 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin:0; box-sizing: border-box;}
+html{
+ box-sizing: border-box;
+}
+
+*, *:before, *:after{
+ box-sizing: inherit;
+}
+
+body {
+    max-height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    background-image: url(../images/site/background.jpg);
+    background-size: cover;
+    padding: 0;
+}
+
+header, main, footer { 
+   
+}
+    
+
+header, footer, footer a {
+    text-align: center;
+    color: black;
+}
+
+/* ------------HEADER--------------- */
+header {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #ffffff; /*White*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 15px 15px 0px 15px;
+    padding: 10px
+}
+
+figure {
+    margin: 0;
+}
+
+figure.logo{
+    flex: 0 1 200px;
+    text-align: left;
+}
+figure.logo img{
+    width: 80px;
+    height: auto;
+}
+
+.folder { 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 20px;
+}
+
+.folder img {
+    width: 15px;
+    height: auto;
+    margin-left: 10px;
+}
+/*.folder p {
+    font-size: 16px;
+    margin-left: 12px;
+    margin-top: -100px;
+}*/
+.folder span {
+  color: #de2226;
+  font-weight: bolder;
+}
+
+#myAccount {
+  font-size: .5em;
+  text-align: left;
+  color: black;
+  margin-left: 5px;
+}
+
+/* ------------NAVIGATION--------------- */
+
+nav {
+    font-family: 'Varela Round', sans-serif;
+    background-color: #de2226; /*Red*/
+    padding-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff; /* white*/
+    text-align: center;
+    padding: .6rem .6rem .6rem .6rem;
+    text-decoration: none;
+    font-size: .6rem;
+
+}
+
+nav ul li a:hover {
+    background-color: #ffffff; /* white*/
+    color: black;
+}
+
+
+    
+/* ------------MAIN--------------- */
+   
+
+main {
+    border-bottom: 4px solid black;
+    background-color: #ffffff;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 15px;
+    
+}
+
+main h1 {
+    font-family: 'Kalam', cursive;
+    font-size: 2.5rem;
+    width: 100%;
+    padding: .5rem .5rem .5rem .5rem;
+    margin: 0px;
+}
+
+main p {
+    padding: .5rem .5rem 1rem .5rem;
+}
+
+
+.image {
+    width: 100%;
+    padding: 0;
+}
+
+.image img {
+    width: 100%;
+}
+
+.imageholder {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+}
+
+#maintitle {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    height: 40vw;
+    overflow: hidden;
+    margin: 0px;
+    padding: .1rem 1rem .1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.imageholder h2 {
+    font-family: 'Kalam', cursive;
+    color: #990033;
+}
+
+.imageholder p {
+    color: #990033; /*dark red*/
+    font-size: .8em;
+}
+
+#actionbtn {
+    width: 80%;
+}
+
+article {
+    padding: 10px
+}
+
+article h3 {
+    font-size: 1.5em;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+
+aside {
+    height: 100%;
+}
+
+div.recipecontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+}
+
+div.recipecontainer figure {
+    text-align: center;
+    padding: 0px 1px 0px 1px;
+}
+
+div.recipecontainer figure img {
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+div.recipecontainer figure figcaption {
+    text-align: center; 
+    font-size: 14px;
+    background-color: #ffffff;
+    height: 40px;
+    padding-left: 15px;
+}
+
+
+aside h3 {
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Kalam', cursive;
+    font-weight: bolder;
+    height: 30px;
+    margin: 10px;
+
+}
+ 
+aside figure img {
+    width: 100%;
+    background-color: #808080; /*gray*/
+    margin: 10px;
+}
+
+aside figure {
+    text-align: center;
+    width: 80%
+}
+
+aside figure a {
+}
+
+/* ------------FOOTER--------------- */
+
+footer {
+    max-width: 100%;
+    background: #ffffff;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+footer>p {
+    font-size: .8em;
+    padding: 2px;
+    font-family: 'Varela Round', sans-serif;
+} 
+
+/* ------------LOGIN--------------- */
+
+
+.content, .login {
+    padding: 25px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+}
+
+.content form {
+    margin-bottom: 50px;
+}
+
+.content, .passwordWarning {
+    margin-top: 10px;
+}
+/*.passwordp, .passwordr {
+    margin-left: 0px;
+    font-size: .8em;
+    
+}*/
+.passwordWarning {
+    color: #0000ee;
+}
+.content #clientEmail, #pword, #clientPassword{
+    margin: 5px;
+    
+}
+
+#newMember {
+    
+}
+
+#loginButton[type=submit] {
+    width: 75%;
+    background-color: #de2226;
+    color: white;
+    text-decoration: underline;
+    padding: 14px 20px;
+    margin: 8px 8px 8px 20px;
+    cursor:pointer;
+}
+    
+#accountButton[type=submit] { /*login*/
+    width: 78%;
+    background-color: #de2226;
+    font-size: 1em;
+    text-decoration: underline;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0px 8px 12px;
+    cursor:pointer;
+}
+
+ #regbtn[type=submit] { /*registration*/
+    width: 75%;
+    background-color: #de2226;
+    font-size: 1em;
+    text-decoration: underline;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 8px 30px 20px;
+    cursor:pointer;
+}
+
+#clientbtn[type=submit] { /*update client*/
+    width: 75%;
+    background-color: #de2226;
+    font-size: 1em;
+    text-decoration: underline;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 8px 30px 20px;
+    cursor:pointer;
+}
+
+#passwordbtn[type=submit] { /*update password*/
+    width: 75%;
+    background-color: #de2226;
+    font-size: 1em;
+    text-decoration: underline;
+    color: white;
+    padding: 14px 20px;
+    margin: 0px 8px 30px 20px;
+    cursor:pointer;
+}
+
+#newMember {
+    margin: 20px;
+}
+
+/* ------------REGISTRATION--------------- */
+.content h3 {
+    color: #de2226;
+    margin-left: 10px;
+}
+.group {
+    margin: 10px 20px 10px 20px;
+    
+}
+#register {
+    margin-top: 20px;
+    
+}
+#clientFirstname, #clientLastname, #clientEmail, #clientPassword {
+    margin: 0px 10px 10px 0px;
+
+}
+
+.simple {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.message {
+    color: #de2226;
+    font-weight: bolder;
+    font-size: 1.7em;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+.passwordWarning {
+    font-size: .7em;
+}
+
+input:required:invalid, input:focus:invalid {
+ /* insert your own styles for invalid form input */
+}
+
+input:required:valid {
+ /* insert your own styles for valid form input */
+}
+
+/* ------------PRODUCT MANAGEMENT--------------- */
+
+.notifyb {
+    color: #0000ee;
+}
+
+.notifyr {
+    color: #de2226;
+}
+/* ------------NEW CATEGORY--------------- */
+.alignForm {
+    margin: 1rem;
+}
+
+.alignForm fieldset {
+    border: none;
+}
+
+#addCatergorybtn[type=submit] { /*category*/
+    width: 50%;
+    background-color: #de2226;/*red*/
+    font-size: 1em;
+    text-decoration: underline;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor:pointer;
+}
+
+/* ------------NEW PRODUCT--------------- */
+#newProduct>h1, #addCategory>h1 {
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+#productInfo, #clientInfo, #passwordInfo {
+   padding-top: 10px;
+   margin-right: 10px;
+   margin-top: 20px;
+}
+
+#invName, #invDescription, #invImage, #invThumbnail, #invPrice, #invStock, #invSize, #invWeight, #invLocation, #invVendor, #invStyle {
+    line-height: 1.5em;
+    
+}
+
+.group label, .group p {
+   text-transform: uppercase; 
+    
+}
+/* ------------ADMIN--------------- */
+.bold {
+    font-weight: bolder;  
+}
+#admin {
+    font-size: 30px;
+    margin: 10px 0px 10px 10px;
+    padding-bottom: 30px;
+    color: #de2226;/*red*/
+    
+}
+.indent {
+    color: #de2226;/*red*/
+    margin-left: 15px;
+    margin-top: 30px;
+    
+}
+
+/* ------------UPDATE PRODUCT--------------- */
+
+table {
+    border-spacing: 0px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 5px solid #de2226;/*red*/
+}
+th, td {
+    padding: 5px 30px 5px 10px;
+    border-spacing: 0px;
+    font-size: 90%;
+    margin: 0px;
+}
+
+th, td {
+    text-align: left;
+    background-color: lightgrey;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid darkslategray;
+    border-right: 2px solid darkslategray;
+}
+
+
+thead {
+    font-size: 120%;
+    text-transform: uppercase;
+    
+}
+
+/* ---------CATEGORY VIEW FLEX --------------*/
+.category {
+    padding-top: 1.5rem;
+    padding-left: 1.25rem;  
+    padding-right: 1.25rem;
+}
+
+.category p {
+    padding: .5rem .5rem 1rem .5rem;
+}
+
+#prod-display{
+    margin: 1.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+#prod-display li{
+    margin-bottom: .9em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+#prod-display li img{
+    width: 80%;
+    height: 200px;
+}
+#prod-display h2 {
+    margin: .5rem;
+   
+}
+
+
+/* ---------CATEGORY VIEW GRID --------------*/
+.smallgrid {
+   display: grid;
+   grid-gap: .5rem;
+   grid-template-columns: repeat(1, 100%);
+   align-items: center;
+    /*margin: 0 auto;*/
+   width: 100%;
+   padding: 0;
+}
+
+figure.smallgriditem {
+    /*background-color: pink;*/
+    text-align: center;
+    border: 3px solid gray;
+    height: 350px;
+    width: auto;
+    
+}
+.smallgriditem img {
+    height: auto;
+    width: 50%;
+    padding: 20px 20px 5px 20px;
+}
+.smallgriditem figcaption {
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+.smallgriditem span.price {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #990033;/*dark red*/
+    line-height: 2;
+}
+
+
+
+/* ---------PRODUCT VIEW --------------*/
+.thumbnail {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.thumbnail figure {
+    padding: 1.5rem;
+    
+}
+
+.thumbnail img {
+    width: 50%;
+}
+#thumbnailh3 {
+    color: #de2226;
+    border-bottom: 2px solid #de2226; /*red*/
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.detail h1 {
+   padding-top: 1.5rem;
+   padding-left: 1.5rem;  
+}
+#image-view {
+   margin: 1.5rem;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+}
+#image-view img {
+    margin-left: 1rem;
+    width: 50%;
+}
+
+#detail-view>h2 {
+    color: #de2226;
+    margin-left: .5rem;
+    margin-right: 1rem;
+    border-bottom: 2px solid #de2226; /*red*/
+}
+#detail-view {
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    
+}
+.detailText {
+    color: #0000ee;/*blue*/
+}
+
+.reviewlogin {
+    text-transform: uppercase;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+
+
+/* ------------UPLOAD---------------*/
+#image-admin h2 {
+    margin: .5rem;
+   
+}
+#image-display {
+    margin: 1rem;
+    list-style: none;
+}
+
+#image-admin>form {
+    margin: 1rem;
+}
+
+#image-display p {
+   padding: 0px;
+   margin-bottom: 20px;
+}
+
+#image-display img {
+    width: 50%;
+}
+
+/* ------------REVIEWS---------------*/
+.reviews {
+    margin: 1rem;
+    background-color: lightgrey;
+}
+
+.reviews p {
+    line-height: 1;
+}
+.eachReview  {
+    padding: 7px;
+    line-height: normal;
+    
+}
+.eachReview>p  {
+    padding: .2em;
+    
+}
+
+.clientscreenName {
+    color: #de2226; /*red*/
+    text-transform: uppercase;
+    
+}
+.date {
+    margin: 0;
+    font-size: .7rem;
+    font-style: italic;
+}
+#reviews {
+    
+    font-size: 1.5rem;
+    color: #de2226;
+    border-bottom: 2px solid #de2226; /*red*/
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.edit {
+    color: red;
+}
+
+.welcome {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: -25px;
+    margin-top: -20px;
+    
+}
+
+.update {
+    font-size: 1rem;
+    padding-top: 0;
+    padding-left: 0;
+    text-transform: none;
+}
+
+#reviewupdatebtn[type=submit] { /*registration*/
+    width: 75%;
+    background-color: #de2226;
+    font-size: 1em;
+    text-decoration: underline;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 8px 30px 0px;
+    cursor:pointer;
+}
+
+@media only screen and (min-width: 550px) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    /* ------------HEADER---------------*/
+    figure.logo img{
+        width: 200px;
+        
+    }
+
+    #myAccount {
+        font-size: 1em;
+     }
+     
+     .folder img {
+        width: 25px;
+        height: auto;
+        margin-left: 10px;
+}
+    
+    /* ------------NAV---------------*/
+    nav ul li a {
+	padding: 1rem 1.8rem 1rem 1.8rem;
+	font-size: 1.25rem;
+    }
+    
+    
+    /* ------------CONTENT---------------*/
+   
+    main h1 {
+        font-size: 4rem;
+    }
+    
+    #maintitle {
+        width: 40%;
+        padding: 20px 15px 50px 25px;
+        background-color: rgba(255, 255, 255, 0.0);
+    }
+    
+    .imageholder h2 {
+        font-size: 3em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .imageholder p {
+        font-size: 1.5em;
+    }
+    
+    #actionbtn {
+        padding: 5px;
+        width: 60%;
+    }
+    
+    aside {
+        display: block;
+        width: 30%;
+        height:500px;
+        left: 0;
+        padding: 10px;
+    }
+    
+    aside h3 { 
+    font-size: 1.6em;
+    }
+    
+    aside figure {
+    width: 50%;
+    }
+    
+    article {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 70%;
+    }
+    
+    article h3 {
+        font-size: 1.5em;
+    }
+    
+    article li {
+        font-size: 18px;
+        line-height: 1.7em;
+    }
+    div.recipecontainer figure figcaption {
+        font-size: 16px;
+        width: 130px;
+    }
+    
+    div.recipecontainer figure img {
+        width: 200%;
+    }
+    
+    /* ------------LOGIN---------------*/
+    
+    .content h1 {
+        font-size: 4em;
+        padding-bottom: 10px;
+    }
+    
+    .content input[type=submit] {
+        width: 40%;
+        font-size: 2em;
+    }
+    
+    #loginButton[type=submit] { /*login*/
+        width: 50%;
+        font-size: 1.3em;
+        margin: 8px 0;
+    }
+    
+     #accountButton[type=submit] { /*login*/
+        width: 50%;
+        font-size: 1.3em;
+        margin: 8px 0;
+    }
+    
+    #regbtn[type=submit] { /*registration*/
+        width: 50%;
+        font-size: 1.3em;
+        margin: 8px 0px 11px 12px;
+    }
+    
+    #clientbtn[type=submit] { /*update client info*/
+        width: 50%;
+        font-size: 1.3em;
+        margin: 8px 0px 11px 12px;
+    }
+    
+    #passwordbtn[type=submit] { /*update password*/
+        width: 50%;
+        font-size: 1.3em;
+        margin: 8px 0px 11px 12px;
+    }
+    
+    /* ------------REGISTRATION--------------- */
+    .passwordWarning {
+        font-size: .8em;
+    
+    }
+    
+    /* ------------NEW CATEGORY--------------- */
+
+
+    #addCatergorybtn[type=submit] { /*category*/
+        width: 50%;
+        font-size: 1.3em;
+        margin: 8px 0px 11px 12px;
+    }
+    
+   
+/* ------------CATEGORY VIEW FLEX--------------- */
+
+
+    
+    /* ---------CATEGORY VIEW GRID --------------*/
+    .smallgrid {
+        grid-template-columns: repeat(3, 32%);
+    }   
+
+    figure.smallgriditem {
+
+    }
+    .smallgriditem img {
+    }
+    
+    .smallgriditem figcaption {
+
+    }
+    .smallgriditem .price {
+    }
+    /* ---------UPLOAD IMAGE --------------*/
+    
+    #image-display {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: .1rem;
+    }
+    
+    #image-display li {
+        width: 100%;
+    }
+    
+ /* ---------DETAIL VIEW --------------*/
+    .thumbnail {
+        margin: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        
+}
+
+    .thumbnail figure {
+        padding: 1.5rem;
+    }
+
+    .thumbnail img {
+        width: 100%;
+    }
+    
+    .thumbnail h3 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    
+   .detail h1 {
+        padding-top: 1.5rem;
+        padding-left: 1.5rem;  
+    }
+    
+    #image-view {
+        margin: 1.5rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #image-view img {
+        margin-left: 1rem;
+        width: 50%;
+    }
+    
+    #reviewupdatebtn[type=submit] { /*registration*/
+    width: 30%;
+    
+}
+    
+/*    #image-display img {
+    width: 100%;
+    }*/
+}

@@ -1,0 +1,34 @@
+Question 1:
+
+INSERT INTO clients
+(clientFirstname, clientLastname, clientEmail, clientPassword, comments)
+VALUES
+('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n', "I am the real Ironman")
+
+Question 2:
+
+UPDATE
+clients
+SET
+clientLevel = 3
+WHERE
+1
+
+Question 3:
+
+UPDATE inventory
+SET invName = REPLACE(invName, 'Nylon Rope', 'Climbing Rope'),
+invDescription = REPLACE(invDescription, 'nylon rope', 'climbing rope')
+WHERE invId = 15;
+
+Question 4:
+SELECT c.categoryName, i.invName
+FROM inventory i
+INNER JOIN categories c ON i.categoryId = c.categoryId
+WHERE c.categoryId = 3
+
+Question 5:
+
+DELETE
+FROM inventory
+WHERE invId = 7;
